@@ -18,9 +18,9 @@ def send_to_remarkable(filename, destination):
         print(f"Failed to send {filename} to {destination}: {e}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Send a file to a reMarkable tablet using rmapi.")
-    parser.add_argument("filename", help="The file to send to the reMarkable tablet.")
-    parser.add_argument("destination", nargs="?", default="/", help="The optional destination folder on the reMarkable tablet. Defaults to root ('/').")
+    parser = argparse.ArgumentParser(description="Send a file to a reMarkable using rmapi.")
+    parser.add_argument("filename", help="The file to send to the reMarkable.")
+    parser.add_argument("destination", nargs="?", default="/", help="The optional destination folder on the reMarkable. Defaults to root ('/').")
 
     args = parser.parse_args()
 
